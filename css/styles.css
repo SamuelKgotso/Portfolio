@@ -22,32 +22,22 @@ body {
 
 
 .cursor {
-    width: 48px;
-    height: 48px;
-    border-radius: 100%;
-    border: 1px solid rgb(73, 73, 73);
-    transition: all 200ms ease-out;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid white; /* Change color to white */
     position: fixed;
     pointer-events: none;
     left: 0;
     top: 0;
-    transform: translate(calc(-50% + 15px), -50%);
+    transform: translate(-50%, -50%);
     z-index: 999999999;
 }
 
 .cursor2 {
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: rgb(73, 73, 73);
-    opacity: .3;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: width .3s, height .3s, opacity .3s;
-    z-index: 999999999;
+    display: none; /* Hide the small circle cursor */
 }
-
 .hover {
     background-color: rgb(67, 67, 67);
     opacity: 0.3;
